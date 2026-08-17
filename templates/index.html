@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ways 2 Africa: experiências e viagens personalizadas em Moçambique.">
+    <title>Ways 2 Africa | Sua jornada começa aqui</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<header class="site-header" id="top">
+    <a class="nav-logo" href="#inicio" aria-label="Ways 2 Africa - início">
+        <img src="{{ url_for('static', filename='images/ways2africa-logo.png') }}" alt="Ways 2 Africa">
+    </a>
+    <nav class="desktop-nav" aria-label="Navegação principal">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre nós</a>
+        <a href="#porque">Por que Moçambique?</a>
+        <a href="#pacotes">Pacotes</a>
+        <a href="#destinos">Destinos</a>
+        <a href="#montar">Monte sua viagem</a>
+    </nav>
+    <a class="nav-cta" href="#montar">Comece sua jornada</a>
+    <button class="mobile-menu-button" id="mobileMenuButton" aria-label="Abrir menu" aria-expanded="false">☰</button>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+    <a href="#inicio">Início</a>
+    <a href="#sobre">Sobre nós</a>
+    <a href="#porque">Por que Moçambique?</a>
+    <a href="#pacotes">Pacotes</a>
+    <a href="#destinos">Destinos</a>
+    <a href="#montar">Monte sua viagem</a>
+</div>
+
+<main>
+<section class="hero" id="inicio">
+    <img
+        class="hero-background"
+        src="{{ url_for('static', filename='images/bazaruto-sunset.png') }}"
+        alt=""
+        aria-hidden="true"
+    >
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <div class="hero-content reveal-now">
+        <div class="hero-logo-wrap">
+            <img class="hero-logo" src="{{ url_for('static', filename='images/ways2africa-logo.png') }}" alt="Ways 2 Africa">
+        </div>
+        <h1>Não existe uma única forma de conhecer Moçambique. Existe a sua.</h1>
+        <p class="hero-description">Entre praias paradisíacas, natureza exuberante, história, cultura e experiências inesquecíveis, Moçambique oferece uma viagem para cada tipo de viajante.</p>
+        <div class="hero-actions">
+            <a class="hero-button" href="#jornada">COMECE SUA JORNADA <span>→</span></a>
+            <a class="hero-link" href="#pacotes">Conheça os pacotes</a>
+        </div>
+    </div>
+    <div class="hero-scroll"><span></span><p>DESCUBRA MAIS</p></div>
+</section>
+
+<section class="journey-panel section-slim" id="jornada">
+    <div class="journey-choice reveal">
+        <div>
+            <span class="eyebrow">POR ONDE COMEÇAR?</span>
+            <h2>Escolha como você quer <em>viajar.</em></h2>
+        </div>
+        <div class="journey-buttons">
+            <a class="journey-card" href="#pacotes"><span>01</span><strong>Conheça nossos pacotes</strong><small>Experiências prontas para diferentes estilos.</small><b>→</b></a>
+            <a class="journey-card featured" href="#montar"><span>02</span><strong>Monte sua viagem</strong><small>Combine experiências e crie um roteiro seu.</small><b>→</b></a>
+        </div>
+    </div>
+</section>
+
+<section class="section section-about" id="sobre">
+    <div class="section-heading reveal">
+        <span class="eyebrow">SOBRE A W2A</span>
+        <h2>Sua viagem começa <em>com suas escolhas.</em></h2>
+    </div>
+    <div class="about-grid">
+        <div class="about-main reveal">
+            <p class="large-copy">A Ways 2 Africa é uma agência de viagens <strong>fictícia</strong> criada para apresentar Moçambique como um destino turístico completo, diverso e surpreendente.</p>
+            <p>Nossa proposta é conectar cada viajante a experiências que combinem com seus interesses, desde momentos de descanso à beira-mar até aventuras, descobertas culturais e experiências de luxo.</p>
+        </div>
+        <div class="about-side reveal">
+            <div class="about-number">01 / NOSSA IDEIA</div>
+            <p>Não existe uma única maneira de viajar. Cada pessoa tem seus próprios interesses, seu próprio ritmo e sua própria ideia de uma viagem perfeita.</p>
+            <div class="about-line"></div>
+            <p class="about-highlight">Por isso, na W2A, a sua jornada começa com as suas escolhas.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section section-why" id="porque">
+    <div class="section-heading centered reveal">
+        <span class="eyebrow">O DESTINO</span>
+        <h2>Por que <em>Moçambique?</em></h2>
+        <p>Um país. Muitas formas de viajar.</p>
+    </div>
+
+    <div class="reasons-grid">
+        <article class="reason-card reveal">
+            <div class="reason-photo">
+                <img src="{{ url_for('static', filename='images/bazaruto.jpg') }}"
+                     alt="Praia e águas do Arquipélago de Bazaruto">
+            </div>
+            <div class="reason-copy"><div class="reason-icon">🌊</div><span>01</span><h3>Praias e ilhas</h3><p>Uma extensa costa banhada pelo Oceano Índico, com praias, ilhas e águas cristalinas para relaxar e praticar esportes aquáticos.</p></div>
+        </article>
+
+        <article class="reason-card reveal">
+            <div class="reason-photo">
+                <img src="{{ url_for('static', filename='images/gorongosa-3.jpg') }}"
+                     alt="Paisagem do Parque Nacional da Gorongosa">
+            </div>
+            <div class="reason-copy"><div class="reason-icon">🐘</div><span>02</span><h3>Natureza e vida selvagem</h3><p>Parques e áreas naturais onde é possível conhecer a fauna africana e viver experiências de safári.</p></div>
+        </article>
+
+        <article class="reason-card reveal">
+            <div class="reason-photo">
+                <img src="{{ url_for('static', filename='images/ilha-mocambique.jpg') }}"
+                     alt="Ilha de Moçambique">
+            </div>
+            <div class="reason-copy"><div class="reason-icon">🏛️</div><span>03</span><h3>História e cultura</h3><p>Cidades, construções históricas, mercados, manifestações culturais e a Ilha de Moçambique, Patrimônio Mundial da UNESCO.</p></div>
+        </article>
+
+        <article class="reason-card reveal">
+            <div class="reason-photo">
+                <img src="{{ url_for('static', filename='images/comida-2.jpg') }}"
+                     alt="Prato de frutos do mar de Moçambique">
+            </div>
+            <div class="reason-copy"><div class="reason-icon">🍤</div><span>04</span><h3>Gastronomia</h3><p>Influências africanas, portuguesas e indianas, com frutos do mar, especiarias e pratos tradicionais.</p></div>
+        </article>
+
+        <article class="reason-card reveal">
+            <div class="reason-photo">
+                <img src="{{ url_for('static', filename='images/natureza-praia.jpg') }}"
+                     alt="Paisagem costeira de Moçambique">
+            </div>
+            <div class="reason-copy"><div class="reason-icon">☀️</div><span>05</span><h3>Diversidade</h3><p>Descanso, aventura, cultura, natureza e experiências sofisticadas podem coexistir em uma única viagem.</p></div>
+        </article>
+    </div>
+</section>
+
+<section class="section section-packages" id="pacotes">
+    <div class="section-heading centered reveal">
+        <span class="eyebrow">NOSSOS PACOTES</span>
+        <h2>Escolha a sua <em>jornada.</em></h2>
+        <p>Diferentes estilos. Diferentes ritmos. Uma mesma vontade de descobrir.</p>
+    </div>
+    <div class="packages-grid">
+        <article class="package-card reveal package-love">
+            <div class="package-image package-image-love">
+                <img src="{{ url_for('static', filename='images/bazaruto.jpg') }}"
+                     alt="Arquipélago de Bazaruto">
+                <span>BAZARUTO · PÔR DO SOL</span>
+            </div>
+            <div class="package-body"><div class="package-icon">🌴</div><h3>Lua de Mel</h3><p class="package-duration">7 dias e 6 noites · 2 pessoas</p><p>Praias, privacidade, gastronomia e experiências românticas no litoral de Moçambique.</p><div class="package-tags"><span>Romântico</span><span>Praia</span><span>Luxo</span></div><button class="package-button" data-package="lua">Ver pacote <span>→</span></button></div>
+        </article>
+        <article class="package-card reveal package-premium">
+            <div class="package-image package-image-premium">
+                <img src="{{ url_for('static', filename='images/benguerra.jpg') }}"
+                     alt="Ilha de Benguerra">
+                <span>BAZARUTO · EXCLUSIVIDADE</span>
+            </div>
+            <div class="package-body"><div class="package-icon">💎</div><h3>Premium</h3><p class="package-duration">Família · 4 pessoas</p><p>Conforto, exclusividade e experiências especiais para toda a família.</p><div class="package-tags"><span>5 estrelas</span><span>Privativo</span><span>Família</span></div><button class="package-button" data-package="premium-family">Ver família <span>→</span></button><button class="package-mini-button" data-package="premium-solo">Ver opção solo</button></div>
+        </article>
+        <article class="package-card reveal package-friends">
+            <div class="package-image package-image-friends">
+                <img src="{{ url_for('static', filename='images/tofo.jpg') }}"
+                     alt="Praia de Tofo">
+                <span>TOFO · MAR</span>
+            </div>
+            <div class="package-body"><div class="package-icon">🥳</div><h3>Amigos</h3><p class="package-duration">7 dias e 6 noites · 6 pessoas</p><p>Uma viagem para compartilhar experiências e aproveitar Moçambique em grupo.</p><div class="package-tags"><span>Grupo</span><span>Ilhas</span><span>Esportes</span></div><button class="package-button" data-package="amigos">Ver pacote <span>→</span></button></div>
+        </article>
+        <article class="package-card reveal package-adventure">
+            <div class="package-image package-image-adventure">
+                <img src="{{ url_for('static', filename='images/gorongosa-3.jpg') }}"
+                     alt="Parque Nacional da Gorongosa">
+                <span>GORONGOSA · NATUREZA</span>
+            </div>
+            <div class="package-body"><div class="package-icon">🧭</div><h3>Aventura</h3><p class="package-duration">7 dias e 6 noites</p><p>Safári, natureza, mar e experiências ao ar livre para quem quer explorar.</p><div class="package-tags"><span>Safári</span><span>Natureza</span><span>Mar</span></div><div class="package-actions"><button class="package-button" data-package="aventura-family">Ver família <span>→</span></button><button class="package-mini-button" data-package="aventura-solo">Ver solo</button></div></div>
+        </article>
+        <article class="package-card reveal package-cultural">
+            <div class="package-image package-image-cultural">
+                <img src="{{ url_for('static', filename='images/ilha-mocambique.jpg') }}"
+                     alt="Ilha de Moçambique">
+                <span>ILHA DE MOÇAMBIQUE · HISTÓRIA</span>
+            </div>
+            <div class="package-body"><div class="package-icon">🏛️</div><h3>Cultural</h3><p class="package-duration">7 dias e 6 noites</p><p>Uma viagem pela história, arte, arquitetura e gastronomia de Moçambique.</p><div class="package-tags"><span>História</span><span>Arte</span><span>Gastronomia</span></div><div class="package-actions"><button class="package-button" data-package="cultural-family">Ver família <span>→</span></button><button class="package-mini-button" data-package="cultural-solo">Ver solo</button></div></div>
+        </article>
+        <article class="package-card reveal package-budget">
+            <div class="package-image package-image-budget">
+                <img src="{{ url_for('static', filename='images/maputo.jpg') }}"
+                     alt="Maputo">
+                <span>MAPUTO · LIBERDADE</span>
+            </div>
+            <div class="package-body"><div class="package-icon">💰</div><h3>Econômico</h3><p class="package-duration">Solo ou família · 7 dias</p><p>Mais liberdade, menos custos: hospede-se de forma econômica e escolha suas experiências no caminho.</p><div class="package-tags"><span>Economia</span><span>Liberdade</span><span>Local</span></div><button class="package-button" data-package="economico">Ver pacote <span>→</span></button></div>
+        </article>
+    </div>
+</section>
+
+<section class="section section-destinations" id="destinos">
+    <div class="section-heading reveal"><span class="eyebrow">DESTINOS</span><h2>Onde começa a sua <em>jornada?</em></h2><p>Sete lugares, sete maneiras de viver Moçambique.</p></div>
+    <div class="destinations-grid">
+        <article class="destination-card destination-maputo reveal">
+            <img src="{{ url_for('static', filename='images/maputo.jpg') }}" alt="Maputo">
+            <span>01</span><div><h3>Maputo</h3><p>História, arquitetura, mercados, gastronomia e vida urbana.</p></div>
+        </article>
+        <article class="destination-card destination-vilanculos reveal">
+            <img src="{{ url_for('static', filename='images/Vilanculos.jpg') }}" alt="Vilanculos">
+            <span>02</span><div><h3>Vilanculos</h3><p>A porta de entrada para as águas do Arquipélago de Bazaruto.</p></div>
+        </article>
+        <article class="destination-card destination-bazaruto reveal">
+            <img src="{{ url_for('static', filename='images/bazaruto.jpg') }}" alt="Arquipélago de Bazaruto">
+            <span>03</span><div><h3>Bazaruto</h3><p>Praias, dunas, bancos de areia, snorkeling e experiências exclusivas.</p></div>
+        </article>
+        <article class="destination-card destination-benguerra reveal">
+            <img src="{{ url_for('static', filename='images/benguerra.jpg') }}" alt="Ilha de Benguerra">
+            <span>04</span><div><h3>Benguerra</h3><p>Villas, praias, mar azul e experiências sofisticadas.</p></div>
+        </article>
+        <article class="destination-card destination-tofo reveal">
+            <img src="{{ url_for('static', filename='images/tofo.jpg') }}" alt="Praia de Tofo">
+            <span>05</span><div><h3>Tofo</h3><p>Vida marinha, praia, esportes aquáticos e atmosfera descontraída.</p></div>
+        </article>
+        <article class="destination-card destination-gorongosa reveal">
+            <img src="{{ url_for('static', filename='images/gorongosa-3.jpg') }}" alt="Parque Nacional da Gorongosa">
+            <span>06</span><div><h3>Gorongosa</h3><p>Safáris, biodiversidade, conservação e natureza.</p></div>
+        </article>
+        <article class="destination-card destination-ilha reveal">
+            <img src="{{ url_for('static', filename='images/ilha-mocambique.jpg') }}" alt="Ilha de Moçambique">
+            <span>07</span><div><h3>Ilha de Moçambique</h3><p>História, patrimônio, arquitetura, cultura e gastronomia.</p></div>
+        </article>
+    </div>
+</section>
+
+<section class="section section-builder" id="montar">
+    <div class="builder-intro reveal"><span class="eyebrow">PROJETO W2A</span><h2>Monte sua <em>viagem.</em></h2><p>Não encontrou exatamente o que estava procurando? Combine diferentes experiências da W2A e crie um roteiro seu.</p></div>
+    <div class="trip-builder reveal">
+        <div class="builder-progress"><div class="progress-track"><span id="progressFill"></span></div><span id="progressText">1 / 5</span></div>
+        <div class="builder-step active" data-step="1"><div class="step-head"><span>01</span><h3>Quem vai viajar?</h3></div><div class="choice-grid"><button class="choice-button" data-value="Sozinho"><strong>01</strong><span>Sozinho</span></button><button class="choice-button" data-value="Casal"><strong>02</strong><span>Casal</span></button><button class="choice-button" data-value="Família"><strong>03</strong><span>Família</span></button><button class="choice-button" data-value="Amigos"><strong>04</strong><span>Amigos</span></button></div></div>
+        <div class="builder-step" data-step="2"><div class="step-head"><span>02</span><h3>Quantas pessoas?</h3></div><div class="people-counter"><button class="counter-button" id="decreasePeople">−</button><strong id="peopleCount">1</strong><button class="counter-button" id="increasePeople">+</button></div></div>
+        <div class="builder-step" data-step="3"><div class="step-head"><span>03</span><h3>O que você quer fazer?</h3></div><p class="step-description">Escolha uma ou mais experiências.</p><div class="experience-grid"><button class="experience-button" data-experience="Praias e ilhas">🌊<span>Praias e ilhas</span></button><button class="experience-button" data-experience="Aventura">🧭<span>Aventura</span></button><button class="experience-button" data-experience="Safári">🐘<span>Safári</span></button><button class="experience-button" data-experience="Cultura e história">🏛️<span>Cultura e história</span></button><button class="experience-button" data-experience="Gastronomia">🍤<span>Gastronomia</span></button><button class="experience-button" data-experience="Luxo e relaxamento">✨<span>Luxo e relaxamento</span></button><button class="experience-button" data-experience="Esportes aquáticos">🏄<span>Esportes aquáticos</span></button></div></div>
+        <div class="builder-step" data-step="4"><div class="step-head"><span>04</span><h3>Quanto tempo você quer viajar?</h3></div><div class="choice-grid duration-grid"><button class="choice-button" data-value="3 dias">3 dias</button><button class="choice-button" data-value="5 dias">5 dias</button><button class="choice-button" data-value="7 dias">7 dias</button><button class="choice-button" data-value="10 dias">10 dias</button><button class="choice-button" data-value="Personalizado">Personalizado</button></div></div>
+        <div class="builder-step" data-step="5"><div class="step-head"><span>05</span><h3>Qual é o seu orçamento?</h3></div><div class="budget-options"><button class="budget-button" data-budget="Econômico"><strong>Econômico</strong><span>Priorize liberdade e experiências locais.</span></button><button class="budget-button" data-budget="Intermediário"><strong>Intermediário</strong><span>Conforto com experiências selecionadas.</span></button><button class="budget-button" data-budget="Premium"><strong>Premium</strong><span>Hospedagem e experiências exclusivas.</span></button></div></div>
+        <div class="builder-result" id="builderResult"><span class="eyebrow">SUA JORNADA W2A ESTÁ PRONTA</span><h3>Sua viagem foi desenhada.</h3><div class="result-grid"><div><span>Viajantes</span><strong id="resultPeople">—</strong></div><div><span>Experiências</span><strong id="resultExperiences">—</strong></div><div><span>Duração</span><strong id="resultDuration">—</strong></div><div><span>Orçamento</span><strong id="resultBudget">—</strong></div></div><div class="result-route"><span>ROTA SUGERIDA</span><strong id="resultRoute">Maputo → Bazaruto → Tofo</strong><p id="resultText">Uma combinação equilibrada de mar, cultura e experiências locais.</p></div><div class="result-price"><span>ESTIMATIVA SIMULADA</span><strong id="resultPrice">R$ 11.500</strong><small>Valor ilustrativo para o projeto. Não representa uma cotação real.</small></div><div class="result-actions"><a href="#pacotes" class="hero-button">EXPLORAR PACOTES <span>→</span></a><button class="secondary-button" id="restartBuilder">REFAZER VIAGEM</button></div></div>
+        <div class="builder-navigation"><button class="builder-back" id="builderBack">← Voltar</button><button class="builder-next" id="builderNext">Continuar →</button></div>
+    </div>
+</section>
+
+<section class="final-cta reveal"><div><span class="eyebrow">A SUA JORNADA COMEÇA AQUI</span><h2>Pronta para descobrir <em>Moçambique?</em></h2><p>Escolha uma experiência pronta ou crie uma viagem feita especialmente para você.</p></div><a class="hero-button" href="#montar">MONTE SUA VIAGEM <span>→</span></a></section>
+</main>
+
+<div class="package-modal" id="packageModal" aria-hidden="true"><div class="modal-overlay" id="modalOverlay"></div><article class="modal-content"><button class="modal-close" id="modalClose" aria-label="Fechar">×</button><div id="modalBody"></div></article></div>
+
+
+<section class="image-credits section-slim" id="creditos-imagens">
+    <div class="image-credits-inner">
+        <span class="eyebrow">CRÉDITOS VISUAIS</span>
+        <p>As fotos locais são as imagens do projeto. Quando uma imagem local não estiver disponível, a página pode usar uma imagem de fallback do Wikimedia Commons. Os respectivos autores e licenças estão listados no arquivo IMAGE_SOURCES.txt.</p>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="footer-main">
+        <div class="footer-brand"><img src="{{ url_for('static', filename='images/ways2africa-logo.png') }}" alt="Ways 2 Africa"><p>Porque a sua jornada começa aqui.</p></div>
+        <div class="footer-column"><h4>Explore</h4><a href="#inicio">Início</a><a href="#pacotes">Pacotes</a><a href="#destinos">Destinos</a><a href="#montar">Monte sua viagem</a><a href="#sobre">Sobre nós</a></div>
+        <div class="footer-column"><h4>Pacotes</h4><a href="#pacotes">Lua de Mel</a><a href="#pacotes">Premium</a><a href="#pacotes">Amigos</a><a href="#pacotes">Aventura</a><a href="#pacotes">Cultural</a><a href="#pacotes">Econômico</a></div>
+        <div class="footer-column"><h4>Contato</h4><a href="mailto:contato@w2a.com">contato@w2a.com</a><a href="tel:+5500000000000">+55 (XX) XXXXX-XXXX</a></div>
+    </div>
+    <div class="footer-bottom"><p>Ways 2 Africa é uma agência de viagens fictícia desenvolvida para a Mostra do Conhecimento 2026.</p><a href="#top">Voltar ao topo ↑</a></div>
+</footer>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
